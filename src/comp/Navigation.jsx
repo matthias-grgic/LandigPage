@@ -42,6 +42,6 @@ const StyledNavLink = styled(NavLink)`
   font-size: clamp(1.5rem, 2vw, 3rem);
   justify-content: left;
   &:hover {
-    color: var(--secondary-color);
+    color: var(--third-color);
   }
 `

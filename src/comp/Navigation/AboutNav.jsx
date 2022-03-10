@@ -34,6 +34,6 @@ const ButtonStyled = styled.div`
   display: flex;
   font-size: clamp(1.5rem, 2vw, 3rem);
   &:hover {
-    color: var(--secondary-color);
+    color: var(--third-color);
   }
 `

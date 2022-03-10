@@ -1,10 +1,12 @@
 import styled from 'styled-components'
 import VisualImg from '../img/visual.jpg'
+import LogoOH from '../img/logo.png'
 
 function Welcome() {
   return (
     <Container>
       <Text>
+        <LogoStyled />
         <h1>{`Hi! We are Orange Hive. 
         We help brands transform, innovate and grow.`}</h1>
       </Text>
@@ -31,6 +33,16 @@ const ImageStyled = styled.div`
   width: 100%;
   height: 1000px;
   border: none;
+`
+
+const LogoStyled = styled.div`
+  background-image: url(${LogoOH});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
+  height: 12rem;
+  margin-bottom: 20px;
 `
 
 const Text = styled.div`

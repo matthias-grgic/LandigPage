@@ -4,6 +4,7 @@ import About from './comp/About'
 import Contact from './comp/Contact'
 import Projects from './comp/Projects'
 import References from './comp/References'
+import InfoText from './comp/InfoText'
 import Teaser from './comp/Teaser'
 import Footer from './comp/Footer'
 import Impressum from './comp/Impressum'
@@ -22,7 +23,7 @@ function App() {
             path='/'
             element={
               <>
-                <Welcome /> <Teaser />
+                <Welcome /> <InfoText /> <Teaser />
               </>
             }
           />
