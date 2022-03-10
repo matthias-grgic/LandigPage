@@ -37,7 +37,7 @@ const StyledNavLink = styled(NavLink)`
   align-items: center;
   background-color: transparent;
   display: flex;
-  font-size: clamp(1rem, 2vw, 3rem);
+  font-size: clamp(0.9rem, 2vw, 3rem);
   justify-content: left;
   &:hover {
     color: var(--third-color);

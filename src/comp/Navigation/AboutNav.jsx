@@ -32,7 +32,7 @@ const ButtonStyled = styled.div`
   background-color: transparent;
   cursor: pointer;
   display: flex;
-  font-size: clamp(1rem, 2vw, 3rem);
+  font-size: clamp(0.9rem, 2vw, 3rem);
   &:hover {
     color: var(--third-color);
   }
