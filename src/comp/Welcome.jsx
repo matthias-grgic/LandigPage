@@ -17,7 +17,7 @@ function Welcome() {
 
 export default Welcome
 
-const Container = styled.div`
+const Container = styled.section`
   display: flex;
   margin-bottom: 100px;
   position: relative;

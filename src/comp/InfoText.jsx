@@ -15,7 +15,7 @@ function InfoText() {
 
 export default InfoText
 
-const Container = styled.div`
+const Container = styled.p`
   display: flex;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
   margin-bottom: 50px;

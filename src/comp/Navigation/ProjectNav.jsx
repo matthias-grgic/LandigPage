@@ -28,7 +28,7 @@ const Menu = styled.div`
   position: fixed;
 `
 
-const ButtonStyled = styled.div`
+const ButtonStyled = styled.section`
   display: flex;
   background-color: transparent;
   cursor: pointer;

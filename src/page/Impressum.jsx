@@ -48,7 +48,7 @@ function Impressum() {
 
 export default Impressum
 
-const ImpressumStyled = styled.div`
+const ImpressumStyled = styled.p`
   display: block;
   font-size: clamp(0.7rem, 1.5vw, 1.2rem);
   white-space: pre-line;

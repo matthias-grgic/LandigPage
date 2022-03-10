@@ -3,10 +3,10 @@ import { Route, Routes } from 'react-router-dom'
 import InfoText from './comp/InfoText'
 import Teaser from './comp/Teaser'
 import Footer from './comp/Footer'
-import Impressum from './comp/Impressum'
-import LegalRegulations from './comp/LegalRegulations'
+import Impressum from './page/Impressum'
+import LegalRegulations from './page/LegalRegulations'
 import Navigation from './comp/Navigation/Navigation'
-import TermsOfUse from './comp/TermsOfUse'
+import TermsOfUse from './page/TermsOfUse'
 import Welcome from './comp/Welcome.jsx'
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
 
 export default App
 
-const Content = styled.div`
+const Content = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +43,7 @@ const Content = styled.div`
   height: 100vh;
 `
 
-const MainStyled = styled.div`
+const MainStyled = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;

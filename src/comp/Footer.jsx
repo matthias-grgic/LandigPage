@@ -19,14 +19,14 @@ function Footer() {
 
 export default Footer
 
-const Copyright = styled.div`
+const Copyright = styled.p`
   display: flex;
   align-items: center;
   background: transparent;
   color: var(--main-txt-color);
   justify-content: center;
 `
-const FunctionNav = styled.div`
+const FunctionNav = styled.section`
   display: flex;
   background-color: transparent;
   gap: 1rem;
@@ -34,7 +34,7 @@ const FunctionNav = styled.div`
   width: 100%;
 `
 
-const FooterStyled = styled.div`
+const FooterStyled = styled.section`
   display: flex;
   flex-direction: column;
   background: var(--fourth-color);

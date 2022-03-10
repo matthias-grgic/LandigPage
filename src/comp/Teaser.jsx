@@ -52,25 +52,25 @@ const LightBox = styled.div`
   height: 100%;
 `
 
-const TeaserContainer = styled.div`
+const TeaserContainer = styled.section`
   display: flex;
   justify-content: center;
   width: 80%;
   height: auto;
   gap: 50px;
-  @media (max-width: 550px) {
+  @media (max-width: 1025px) {
     flex-direction: column;
   }
 `
 
-const TeaserItem = styled.div`
+const TeaserItem = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 20px;
 `
 
-const Text = styled.div`
+const Text = styled.p`
   display: flex;
   font-size: clamp(1rem, 1.5vw, 1.2rem);
 `
@@ -80,7 +80,7 @@ const TeaserImageOne = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 350px;
+  height: 300px;
 `
 
 const TeaserImageTwo = styled(TeaserImageOne)`

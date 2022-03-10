@@ -17,7 +17,7 @@ function AboutNav() {
 
 export default AboutNav
 
-const Container = styled.div`
+const Container = styled.section`
   background-color: transparent;
 `
 
