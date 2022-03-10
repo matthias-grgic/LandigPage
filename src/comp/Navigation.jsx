@@ -4,10 +4,10 @@ import styled from 'styled-components'
 function Navigation() {
   return (
     <NavBar>
-      <StyledNavLink to='/'>Projekte</StyledNavLink>
-      <StyledNavLink to='/test'>Über uns</StyledNavLink>
-      <StyledNavLink to='/test2'>Referenzen</StyledNavLink>
-      <StyledNavLink to='/test2'>Kontakt</StyledNavLink>
+      <StyledNavLink to='/projects'>PROJEKTE</StyledNavLink>
+      <StyledNavLink to='/about'>ÜBER UNS</StyledNavLink>
+      <StyledNavLink to='/references'>REFERENZEN</StyledNavLink>
+      <StyledNavLink to='/contact'>KONTAKT</StyledNavLink>
     </NavBar>
   )
 }
@@ -28,10 +28,11 @@ const NavBar = styled.div`
 
 const StyledNavLink = styled(NavLink)`
   align-items: center;
+  background: transparent;
   display: flex;
+  font-size: clamp(1.5rem, 2vw, 3rem);
   justify-content: center;
   &:hover {
-    background-color: var(--secondary-color);
-    color: var(--white-color);
+    color: var(--secondary-color);
   }
 `

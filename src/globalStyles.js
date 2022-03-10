@@ -20,7 +20,6 @@ const GlobalStyle = createGlobalStyle`
 a {
   color: var(--main-txt-color);
         text-decoration: none;
-        
     }
 
 h1, h2, h3 ,h4 ,h5, h6 {
@@ -30,7 +29,7 @@ h1, h2, h3 ,h4 ,h5, h6 {
 }
 
 h1 {
-  font-size: clamp(100%, 2rem + 4vw, 44px);
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
 }
 `
 

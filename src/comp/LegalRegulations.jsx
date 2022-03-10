@@ -5,6 +5,10 @@ function LegalRegulations() {
     <>
       <h1>DATENSCHUTZHINWEISE</h1>
       <LegalRegulationsStyled>{`
+      
+      
+      
+      
       Diese Datenschutzhinweise klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten (nachfolgend kurz „Daten“) innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepräsenzen, wie z.B. unserer Social Media Profile auf. (nachfolgend gemeinsam bezeichnet als „Onlinean¬gebot“). Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. „personenbezogene Daten“ oder deren „Verarbeitung“ verweisen wir auf die Definitionen in Art. 4 der Datenschutzgrundverordnung (DSGVO).
 
       Es findet keine Datenübermittlung an Dritte ohne Einwilligung des Betroffenen oder ohne gesetzliche Grundlage statt.
@@ -228,7 +232,6 @@ function LegalRegulations() {
       
       Stand: 18.11.2021
       
-      ImpressumDatenschutzhinweiseKontaktNewsletter
       
       `}</LegalRegulationsStyled>
     </>
@@ -239,6 +242,7 @@ export default LegalRegulations
 
 const LegalRegulationsStyled = styled.div`
   display: block;
+  font-size: clamp(0.7rem, 1.5vw, 1.2rem);
   white-space: pre-line;
   width: 60%;
   height: auto;

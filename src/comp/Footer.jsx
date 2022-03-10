@@ -1,17 +1,18 @@
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import LogoOH from '../img/logo.png'
+// import { NavHashLink } from 'react-router-hash-link'
 
 function Footer() {
   return (
     <FooterStyled>
-      <Copyright>© 2022 Orange Hive GmbH</Copyright>
       <LogoStyled />
       <FunctionNav>
         <StyledNavLink to='/impressum'>Impressum</StyledNavLink>
         <StyledNavLink to='/legalregulations'>Rechtliche Hinweise</StyledNavLink>
         <StyledNavLink to='/termsofuse'>Nutzungsbedingungen</StyledNavLink>
       </FunctionNav>
+      <Copyright>© 2022 Orange Hive GmbH</Copyright>
     </FooterStyled>
   )
 }
@@ -22,7 +23,7 @@ const Copyright = styled.div`
   display: flex;
   align-items: center;
   background: transparent;
-  color: var(--white-color);
+  color: var(--main-txt-color);
   justify-content: center;
 `
 const FunctionNav = styled.div`
@@ -38,9 +39,10 @@ const FooterStyled = styled.div`
   background: var(--fourth-color);
   gap: 1.5rem;
   justify-content: center;
-  padding: 5%;
+  padding: 3rem;
   height: 50%;
   width: 100%;
+  margin-top: 100px;
 `
 
 const LogoStyled = styled.div`
@@ -50,9 +52,7 @@ const LogoStyled = styled.div`
   background-repeat: no-repeat;
   background-color: transparent;
   background-position: center;
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
+  height: 5rem;
 `
 
 const StyledNavLink = styled(NavLink)`

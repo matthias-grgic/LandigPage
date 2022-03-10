@@ -7,6 +7,8 @@ function Impressum() {
       <ImpressumStyled>{`
 
 
+
+
       Orange Hive GmbH
       Lindleystr. 12
       60314 Frankfurt am Main
@@ -48,6 +50,7 @@ export default Impressum
 
 const ImpressumStyled = styled.div`
   display: block;
+  font-size: clamp(0.7rem, 1.5vw, 1.2rem);
   white-space: pre-line;
   width: 60%;
   height: auto;
