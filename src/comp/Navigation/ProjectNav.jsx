@@ -4,8 +4,8 @@ import styled from 'styled-components'
 function ProjectNav() {
   const [showMenu, setShowMenu] = useState(false)
   return (
-    <Container>
-      <ButtonStyled onClick={() => setShowMenu((prev) => !prev)}>PROJEKTE</ButtonStyled>
+    <Container onMouseLeave={() => setShowMenu(false)} onMouseOver={() => setShowMenu(true)}>
+      <ButtonStyled>PROJEKTE</ButtonStyled>
       <Menu status={showMenu}>
         <ButtonStyled>PROJEKT A</ButtonStyled>
         <ButtonStyled>PROJEKT B</ButtonStyled>
@@ -32,7 +32,7 @@ const ButtonStyled = styled.div`
   display: flex;
   background-color: transparent;
   cursor: pointer;
-  font-size: clamp(1.5rem, 2vw, 3rem);
+  font-size: clamp(1rem, 2vw, 3rem);
   &:hover {
     color: var(--third-color);
   }

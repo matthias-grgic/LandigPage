@@ -1,9 +1,5 @@
 import styled from 'styled-components'
 import { Route, Routes } from 'react-router-dom'
-import About from './comp/About'
-import Contact from './comp/Contact'
-import Projects from './comp/Projects'
-import References from './comp/References'
 import InfoText from './comp/InfoText'
 import Teaser from './comp/Teaser'
 import Footer from './comp/Footer'
@@ -11,7 +7,7 @@ import Impressum from './comp/Impressum'
 import LegalRegulations from './comp/legalRegulations'
 import Navigation from './comp/Navigation'
 import TermsOfUse from './comp/TermsOfUse'
-import Welcome from './pages/Welcome'
+import Welcome from './comp/Welcome.jsx'
 
 function App() {
   return (
@@ -30,10 +26,6 @@ function App() {
           <Route path='/impressum' element={<Impressum />} />
           <Route path='/legalregulations' element={<LegalRegulations />} />
           <Route path='/termsofuse' element={<TermsOfUse />} />
-          {/* <Route path='/about' element={<About />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/references' element={<References />} /> */}
         </Routes>
         <Footer />
       </Content>

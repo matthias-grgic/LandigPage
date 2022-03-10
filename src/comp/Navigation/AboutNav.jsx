@@ -4,8 +4,8 @@ import styled from 'styled-components'
 function AboutNav() {
   const [showMenuAbout, setShowMenuAbout] = useState(false)
   return (
-    <Container>
-      <ButtonStyled onClick={() => setShowMenuAbout((prev) => !prev)}>ÜBER UNS</ButtonStyled>
+    <Container onMouseLeave={() => setShowMenuAbout(false)} onMouseOver={() => setShowMenuAbout(true)}>
+      <ButtonStyled>ÜBER UNS</ButtonStyled>
       <Menu status={showMenuAbout}>
         <ButtonStyled>PHILOSOPHIE</ButtonStyled>
         <ButtonStyled>GESCHÄFTSFÜHRUNG</ButtonStyled>
@@ -32,7 +32,7 @@ const ButtonStyled = styled.div`
   background-color: transparent;
   cursor: pointer;
   display: flex;
-  font-size: clamp(1.5rem, 2vw, 3rem);
+  font-size: clamp(1rem, 2vw, 3rem);
   &:hover {
     color: var(--third-color);
   }

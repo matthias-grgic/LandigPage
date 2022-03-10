@@ -19,6 +19,7 @@ export default Welcome
 
 const Container = styled.div`
   display: flex;
+  margin-bottom: 100px;
   position: relative;
   text-align: center;
   justify-content: center;
@@ -26,13 +27,14 @@ const Container = styled.div`
 `
 
 const ImageStyled = styled.div`
-  display: block;
   background-image: url(${VisualImg});
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 1000px;
-  border: none;
+  height: 800px;
+  width: 2500px;
+  @media (max-width: 550px) {
+    height: 400px;
+  }
 `
 
 const LogoStyled = styled.div`

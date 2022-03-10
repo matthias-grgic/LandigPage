@@ -25,13 +25,11 @@ const NavBar = styled.div`
   display: flex;
   gap: 1rem;
   justify-content: space-around;
-  margin-bottom: 40px;
-  padding: 8px;
+  padding: 10px;
   position: fixed;
   width: 100%;
   z-index: 1;
   @media (max-width: 550px) {
-    flex-direction: column;
   }
 `
 
@@ -39,7 +37,7 @@ const StyledNavLink = styled(NavLink)`
   align-items: center;
   background-color: transparent;
   display: flex;
-  font-size: clamp(1.5rem, 2vw, 3rem);
+  font-size: clamp(1rem, 2vw, 3rem);
   justify-content: left;
   &:hover {
     color: var(--third-color);
