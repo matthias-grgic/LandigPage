@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-import ProjectNav from './Navigation/ProjectNav'
-import AboutNav from './Navigation/AboutNav'
+import ProjectNav from './ProjectNav'
+import AboutNav from './AboutNav'
 
 function Navigation() {
   return (

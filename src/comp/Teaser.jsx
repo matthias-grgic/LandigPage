@@ -11,7 +11,7 @@ function Teaser() {
 
   return (
     <TeaserContainer>
-      <TeaserOne onClick={() => showImage()}>
+      <TeaserItem onClick={() => showImage()}>
         <TeaserImageOne />
         {lightboxDisplay ? (
           <LightBox>
@@ -21,17 +21,17 @@ function Teaser() {
           ''
         )}
         <Text>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem mollitia voluptates cumque nemo ipsa qui suscipit eius saepe culpa quae!</Text>
-      </TeaserOne>
+      </TeaserItem>
 
-      <TeaserTwo>
+      <TeaserItem>
         <TeaserImageTwo />
         <Text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, necessitatibus odio? Libero voluptatibus mollitia laudantium dolor veritatis voluptatem rerum hic?</Text>
-      </TeaserTwo>
+      </TeaserItem>
 
-      <TeaserThree>
+      <TeaserItem>
         <TeaserImageThree />
         <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis perferendis asperiores consequatur numquam, fugit odio.</Text>
-      </TeaserThree>
+      </TeaserItem>
     </TeaserContainer>
   )
 }
@@ -63,16 +63,12 @@ const TeaserContainer = styled.div`
   }
 `
 
-const TeaserOne = styled.div`
+const TeaserItem = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 20px;
 `
-
-const TeaserTwo = styled(TeaserOne)``
-
-const TeaserThree = styled(TeaserOne)``
 
 const Text = styled.div`
   display: flex;
@@ -84,7 +80,7 @@ const TeaserImageOne = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 400px;
+  height: 350px;
 `
 
 const TeaserImageTwo = styled(TeaserImageOne)`

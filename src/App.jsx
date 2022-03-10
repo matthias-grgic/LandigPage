@@ -5,7 +5,7 @@ import Teaser from './comp/Teaser'
 import Footer from './comp/Footer'
 import Impressum from './comp/Impressum'
 import LegalRegulations from './comp/legalRegulations'
-import Navigation from './comp/Navigation'
+import Navigation from './comp/Navigation/Navigation'
 import TermsOfUse from './comp/TermsOfUse'
 import Welcome from './comp/Welcome.jsx'
 
