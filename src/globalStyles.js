@@ -7,8 +7,8 @@ const GlobalStyle = createGlobalStyle`
   --third-color: #ec415d;
   --fourth-color: #41bec6;
   --white-color: #fff;
- 
 }
+
   * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;

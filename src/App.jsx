@@ -1,15 +1,15 @@
 import styled from 'styled-components'
 import { Route, Routes } from 'react-router-dom'
-import Footer from './comp/Footer'
+import Navigation from './comp/Navigation'
+import Welcome from './pages/Welcome'
 
 function App() {
   return (
     <MainStyled>
-      <div>test</div>
-      <Footer />
-      {/* <Routes>
-        <Route path='/' />
-      </Routes> */}
+      <Navigation />
+      <Routes>
+        <Route path='/' element={<Welcome />} />
+      </Routes>
     </MainStyled>
   )
 }
