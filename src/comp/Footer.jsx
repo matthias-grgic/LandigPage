@@ -31,6 +31,7 @@ const FunctionNav = styled.div`
   background-color: transparent;
   gap: 1rem;
   justify-content: center;
+  width: 100%;
 `
 
 const FooterStyled = styled.div`
