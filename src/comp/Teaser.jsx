@@ -6,16 +6,18 @@ import { useState } from 'react'
 
 function Teaser() {
   const [lightboxDisplay, setLightboxDisplay] = useState(false)
+  const [setImage, setSetImage] = useState(null)
 
   const showImage = () => setLightboxDisplay((prev) => !prev)
+  const whichIMG = (img) => setSetImage(img)
 
   return (
     <TeaserContainer>
-      <TeaserItem onClick={() => showImage()}>
+      <TeaserItem onClick={() => showImage() + whichIMG(TeaserImg1)}>
         <TeaserImageOne />
         {lightboxDisplay ? (
           <LightBox>
-            <img src={TeaserImg1}></img>
+            <img src={setImage}></img>
           </LightBox>
         ) : (
           ''
@@ -23,13 +25,27 @@ function Teaser() {
         <Text>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem mollitia voluptates cumque nemo ipsa qui suscipit eius saepe culpa quae!</Text>
       </TeaserItem>
 
-      <TeaserItem>
+      <TeaserItem onClick={() => showImage() + whichIMG(TeaserImg2)}>
         <TeaserImageTwo />
+        {lightboxDisplay ? (
+          <LightBox>
+            <img src={setImage}></img>
+          </LightBox>
+        ) : (
+          ''
+        )}
         <Text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, necessitatibus odio? Libero voluptatibus mollitia laudantium dolor veritatis voluptatem rerum hic?</Text>
       </TeaserItem>
 
-      <TeaserItem>
+      <TeaserItem onClick={() => showImage() + whichIMG(TeaserImg3)}>
         <TeaserImageThree />
+        {lightboxDisplay ? (
+          <LightBox>
+            <img src={setImage}></img>
+          </LightBox>
+        ) : (
+          ''
+        )}
         <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis perferendis asperiores consequatur numquam, fugit odio.</Text>
       </TeaserItem>
     </TeaserContainer>
