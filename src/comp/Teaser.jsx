@@ -27,6 +27,7 @@ function Teaser() {
         <TeaserImageThree />
         <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis perferendis asperiores consequatur numquam, fugit odio.</Text>
       </TeaserItem>
+
       {lightboxDisplay ? (
         <LightBox onClick={() => showImage()}>
           <img src={setImage}></img>
@@ -72,7 +73,7 @@ const TeaserItem = styled.section`
   gap: 20px;
 `
 
-const Text = styled.p`
+const Text = styled.div`
   display: flex;
   font-size: clamp(1rem, 1.5vw, 1.2rem);
 `
