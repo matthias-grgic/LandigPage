@@ -35,7 +35,7 @@ function App() {
 
 export default App
 
-const Content = styled.section`
+const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,8 +48,6 @@ const MainStyled = styled.section`
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-top: 50px;
-  overflow: auto;
   width: 100vw;
   height: 100vh;
 `

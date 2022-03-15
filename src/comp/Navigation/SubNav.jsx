@@ -1,21 +1,22 @@
 import { useState } from 'react'
 import styled from 'styled-components'
+import { NavLink } from 'react-router-dom'
 
-function AboutNav() {
+function SubNav({ buttonName, subButton1, subButton2, subButton3 }) {
   const [showMenuAbout, setShowMenuAbout] = useState(false)
   return (
     <Container onMouseLeave={() => setShowMenuAbout(false)} onMouseOver={() => setShowMenuAbout(true)}>
-      <ButtonStyled>ÜBER UNS</ButtonStyled>
+      <StyledNavLink to=''>{buttonName}</StyledNavLink>
       <Menu status={showMenuAbout}>
-        <ButtonStyled>PHILOSOPHIE</ButtonStyled>
-        <ButtonStyled>GESCHÄFTSFÜHRUNG</ButtonStyled>
-        <ButtonStyled>MITARBEITER</ButtonStyled>
+        <StyledNavLink to={`/${subButton1}`}>{subButton1}</StyledNavLink>
+        <StyledNavLink to={`/${subButton2}`}>{subButton2}</StyledNavLink>
+        <StyledNavLink to={`/${subButton3}`}>{subButton3}</StyledNavLink>
       </Menu>
     </Container>
   )
 }
 
-export default AboutNav
+export default SubNav
 
 const Container = styled.section`
   background-color: transparent;
@@ -28,12 +29,13 @@ const Menu = styled.div`
   position: fixed;
 `
 
-const ButtonStyled = styled.div`
+const StyledNavLink = styled(NavLink)`
   background-color: transparent;
+  color: var(--fourth-color);
   cursor: pointer;
   display: flex;
   font-size: clamp(0.9rem, 2vw, 3rem);
   &:hover {
-    color: var(--third-color);
+    background-color: rgb(255, 255, 255, 0.5);
   }
 `

@@ -24,23 +24,25 @@ const Copyright = styled.p`
   align-items: center;
   background: transparent;
   color: var(--main-txt-color);
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
   justify-content: center;
 `
-const FunctionNav = styled.section`
+const FunctionNav = styled.div`
   display: flex;
   background-color: transparent;
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
   gap: 1rem;
   justify-content: center;
   width: 100%;
 `
 
-const FooterStyled = styled.section`
+const FooterStyled = styled.footer`
   display: flex;
   flex-direction: column;
   background: var(--fourth-color);
   gap: 1.5rem;
   justify-content: center;
-  padding: 3rem;
+  padding: clamp(0.8rem, 1.5vw, 3rem);
   height: 50%;
   width: 100%;
   margin-top: 100px;

@@ -5,12 +5,13 @@ import LogoOH from '../img/logo.png'
 function Welcome() {
   return (
     <Container>
-      <Text>
-        <LogoStyled />
-        <h1>{`Hi! We are Orange Hive. 
+      <WelcomeStyled>
+        <Text>
+          <LogoStyled />
+          <h1>{`Hi! We are Orange Hive. 
         We help brands transform, innovate and grow.`}</h1>
-      </Text>
-      <ImageStyled />
+        </Text>
+      </WelcomeStyled>
     </Container>
   )
 }
@@ -18,28 +19,13 @@ function Welcome() {
 export default Welcome
 
 const Container = styled.section`
-  display: flex;
-  margin-bottom: 100px;
-  position: relative;
-  text-align: center;
-  justify-content: center;
+  display: block;
   width: 100%;
-`
-
-const ImageStyled = styled.div`
-  background-image: url(${VisualImg});
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 800px;
-  width: 2500px;
-  @media (max-width: 550px) {
-    height: 400px;
-  }
 `
 
 const LogoStyled = styled.div`
   background-image: url(${LogoOH});
-  background-size: contain;
+  background-size: clamp(20rem, 50vw, 30rem);
   background-repeat: no-repeat;
   background-color: transparent;
   background-position: center;
@@ -50,12 +36,27 @@ const LogoStyled = styled.div`
 const Text = styled.div`
   background-color: transparent;
   color: var(--main-txt-color);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   white-space: pre-line;
   h1 {
     color: var(--third-color);
+  }
+`
+
+const WelcomeStyled = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-image: url(${VisualImg});
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  justify-content: center;
+  margin-bottom: 40px;
+  text-align: center;
+
+  @media (max-width: 550px) {
+    height: 350px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
   }
 `

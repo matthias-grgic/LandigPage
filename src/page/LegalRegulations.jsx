@@ -245,5 +245,4 @@ const LegalRegulationsStyled = styled.p`
   font-size: clamp(0.7rem, 1.5vw, 1.2rem);
   white-space: pre-line;
   width: 60%;
-  height: auto;
 `
