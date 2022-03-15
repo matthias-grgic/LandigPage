@@ -1,13 +1,11 @@
 import styled from 'styled-components'
 import { Route, Routes } from 'react-router-dom'
-import InfoText from './comp/InfoText'
-import Teaser from './comp/Teaser'
 import Footer from './comp/Footer'
 import Impressum from './page/Impressum'
+import LandingPage from './page/LandingPage'
 import LegalRegulations from './page/LegalRegulations'
 import Navigation from './comp/Navigation/Navigation'
 import TermsOfUse from './page/TermsOfUse'
-import Welcome from './comp/Welcome.jsx'
 
 function App() {
   return (
@@ -15,14 +13,7 @@ function App() {
       <Navigation />
       <Content>
         <Routes>
-          <Route
-            path='/'
-            element={
-              <>
-                <Welcome /> <InfoText /> <Teaser />
-              </>
-            }
-          />
+          <Route path='/' element={<LandingPage />} />
           <Route path='/impressum' element={<Impressum />} />
           <Route path='/legalregulations' element={<LegalRegulations />} />
           <Route path='/termsofuse' element={<TermsOfUse />} />

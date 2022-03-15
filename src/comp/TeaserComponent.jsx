@@ -1,31 +1,28 @@
 import styled from 'styled-components'
-import TeaserImg1 from '../img/teaser_01.jpg'
-import TeaserImg2 from '../img/teaser_02.jpg'
-import TeaserImg3 from '../img/teaser_03.jpg'
 import { useState } from 'react'
 
-function Teaser() {
+function TeaserComponent({ img1, img2, img3, text1, text2, text3 }) {
   const [lightboxDisplay, setLightboxDisplay] = useState(false)
-  const [setImage, setSetImage] = useState(null)
+  const [setImage, setSetImage] = useState('')
 
   const showImage = () => setLightboxDisplay((prev) => !prev)
   const whichIMG = (img) => setSetImage(img)
 
   return (
     <TeaserContainer>
-      <TeaserItem onClick={() => showImage() + whichIMG(TeaserImg1)}>
-        <TeaserImageOne />
-        <Text>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem mollitia voluptates cumque nemo ipsa qui suscipit eius saepe culpa quae!</Text>
+      <TeaserItem onClick={() => showImage() + whichIMG(img1)}>
+        <TeaserImageOne url={img1} />
+        <Text>{text1}</Text>
       </TeaserItem>
 
-      <TeaserItem onClick={() => showImage() + whichIMG(TeaserImg2)}>
-        <TeaserImageTwo />
-        <Text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, necessitatibus odio? Libero voluptatibus mollitia laudantium dolor veritatis voluptatem rerum hic?</Text>
+      <TeaserItem onClick={() => showImage() + whichIMG(img2)}>
+        <TeaserImageTwo url={img2} />
+        <Text>{text2}</Text>
       </TeaserItem>
 
-      <TeaserItem onClick={() => showImage() + whichIMG(TeaserImg3)}>
-        <TeaserImageThree />
-        <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis perferendis asperiores consequatur numquam, fugit odio.</Text>
+      <TeaserItem onClick={() => showImage() + whichIMG(img3)}>
+        <TeaserImageThree url={img3} />
+        <Text>{text3}</Text>
       </TeaserItem>
 
       {lightboxDisplay ? (
@@ -39,7 +36,7 @@ function Teaser() {
   )
 }
 
-export default Teaser
+export default TeaserComponent
 
 const LightBox = styled.div`
   display: flex;
@@ -80,7 +77,7 @@ const Text = styled.div`
 `
 
 const TeaserImageOne = styled.div`
-  background-image: url(${TeaserImg1});
+  background-image: url(${(props) => props.url});
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -91,10 +88,6 @@ const TeaserImageOne = styled.div`
   }
 `
 
-const TeaserImageTwo = styled(TeaserImageOne)`
-  background-image: url(${TeaserImg2});
-`
+const TeaserImageTwo = styled(TeaserImageOne)``
 
-const TeaserImageThree = styled(TeaserImageOne)`
-  background-image: url(${TeaserImg3});
-`
+const TeaserImageThree = styled(TeaserImageOne)``
