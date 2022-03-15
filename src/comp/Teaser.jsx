@@ -86,7 +86,7 @@ const TeaserImageOne = styled.div`
   background-position: center;
   height: 300px;
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.3s ease;
   }
 `
