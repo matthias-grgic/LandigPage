@@ -69,8 +69,9 @@ const TeaserContainer = styled.section`
 const TeaserItem = styled.section`
   display: flex;
   flex-direction: column;
-  width: 100%;
   gap: 20px;
+  padding: 20px;
+  width: 100%;
 `
 
 const Text = styled.div`
@@ -84,6 +85,10 @@ const TeaserImageOne = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   height: 300px;
+  &:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease;
+  }
 `
 
 const TeaserImageTwo = styled(TeaserImageOne)`
