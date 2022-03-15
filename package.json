@@ -23,7 +23,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.3",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "prettier-eslint": "^13.0.0",
+    "prettier-eslint": "^8.2.2",
     "vite": "^2.8.0"
   }
 }
