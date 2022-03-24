@@ -24,8 +24,8 @@ function Navigation() {
     <NavBar status={navbar ? 'navbar' : 'active'}>
       <SubNav buttonName={'PROJEKTE'} subButton1={'PROJEKT-A'} subButton2={'PROJEKT-B'} subButton3={'PROJEKT-C'} />
       <SubNav buttonName={'ÜBER UNS'} subButton1={'PHILOSOPHIE'} subButton2={'GESCHÄFTSFÜHRUNG'} subButton3={'MITARBEITER'} />
-      <StyledNavLink to='/references'>REFERENZEN</StyledNavLink>
-      <StyledNavLink to='/contact'>KONTAKT</StyledNavLink>
+      <SubNav buttonName={'REFERENZEN'} />
+      <SubNav buttonName={'KONTAKT'} />
     </NavBar>
   )
 }
@@ -34,7 +34,7 @@ export default Navigation
 
 const NavBar = styled.nav`
   display: flex;
-  background-color: ${(props) => (props.status === 'active' ? 'transparent' : 'rgb(211, 211, 211, 0.2)')};
+  background-color: ${(props) => (props.status === 'active' ? 'transparent' : 'rgb(211, 211, 211, 0.6)')};
   top: 0;
   justify-content: space-around;
   margin: 10px;
@@ -42,16 +42,4 @@ const NavBar = styled.nav`
   position: fixed;
   width: 100%;
   z-index: 1;
-`
-
-const StyledNavLink = styled(NavLink)`
-  display: flex;
-  color: var(--fourth-color);
-  align-items: center;
-  background-color: transparent;
-  font-size: clamp(0.9rem, 2vw, 3rem);
-  justify-content: left;
-  &:hover {
-    background-color: rgb(211, 211, 211, 0.2);
-  }
 `

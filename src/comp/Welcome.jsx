@@ -8,8 +8,8 @@ function Welcome() {
       <WelcomeStyled>
         <Text>
           <LogoStyled />
-          <h1>{`Hi! We are Orange Hive. 
-        We help brands transform, innovate and grow.`}</h1>
+          <h1>{`Hi! We are LoremIpsum. 
+        We help you to transform, innovate and grow.`}</h1>
         </Text>
       </WelcomeStyled>
     </Container>
@@ -25,20 +25,19 @@ const Container = styled.section`
 
 const LogoStyled = styled.div`
   background-image: url(${LogoOH});
-  background-size: clamp(20rem, 50vw, 30rem);
+  background-size: clamp(20rem, 50vw, 35rem);
   background-repeat: no-repeat;
   background-color: transparent;
   background-position: center;
-  height: 12rem;
-  margin-bottom: 20px;
+  height: 100%;
 `
 
 const Text = styled.div`
+  display: block;
   background-color: transparent;
-  color: var(--main-txt-color);
   white-space: pre-line;
   h1 {
-    color: var(--third-color);
+    color: white;
   }
 `
 
@@ -50,7 +49,6 @@ const WelcomeStyled = styled.div`
   background-repeat: no-repeat;
   height: 600px;
   justify-content: center;
-  margin-bottom: 40px;
   text-align: center;
 
   @media (max-width: 550px) {

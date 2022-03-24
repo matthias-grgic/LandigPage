@@ -54,10 +54,12 @@ const LightBox = styled.div`
 
 const TeaserContainer = styled.section`
   display: flex;
-  justify-content: center;
-  width: 80%;
+  background-color: transparent;
   height: auto;
-  gap: 50px;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  gap: 40px;
   @media (max-width: 1025px) {
     flex-direction: column;
   }
@@ -65,6 +67,7 @@ const TeaserContainer = styled.section`
 
 const TeaserItem = styled.section`
   display: flex;
+  background-color: transparent;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
@@ -73,15 +76,17 @@ const TeaserItem = styled.section`
 
 const Text = styled.div`
   display: flex;
+  background-color: transparent;
   font-size: clamp(1rem, 1.5vw, 1.2rem);
 `
 
 const TeaserImageOne = styled.div`
+  background-color: transparent;
   background-image: url(${(props) => props.url});
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 300px;
+  height: 200px;
   &:hover {
     transform: scale(1.1);
     transition: 0.3s ease;

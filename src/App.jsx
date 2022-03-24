@@ -28,6 +28,7 @@ export default App
 
 const Content = styled.div`
   display: flex;
+  background-image: linear-gradient(0deg, #ee9ca7 0%, #ffdde1 100%);
   flex-direction: column;
   align-items: center;
   width: 100vw;

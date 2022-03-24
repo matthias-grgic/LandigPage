@@ -3,10 +3,6 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyle = createGlobalStyle`
 :root{
   --main-txt-color: #000;
-  --secondary-color: #382c63;
-  --third-color: #ec415d;
-  --fourth-color: #41bec6;
-  --white-color: #fff;
 }
 
   * {

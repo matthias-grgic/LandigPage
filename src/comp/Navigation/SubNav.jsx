@@ -6,7 +6,7 @@ function SubNav({ buttonName, subButton1, subButton2, subButton3 }) {
   const [showMenuAbout, setShowMenuAbout] = useState(false)
   return (
     <Container onMouseLeave={() => setShowMenuAbout(false)} onMouseOver={() => setShowMenuAbout(true)}>
-      <StyledNavLink to=''>{buttonName}</StyledNavLink>
+      <StyledNavLink to={`/${buttonName}`}>{buttonName}</StyledNavLink>
       <Menu status={showMenuAbout}>
         <StyledNavLink to={`/${subButton1}`}>{subButton1}</StyledNavLink>
         <StyledNavLink to={`/${subButton2}`}>{subButton2}</StyledNavLink>
@@ -31,11 +31,11 @@ const Menu = styled.div`
 
 const StyledNavLink = styled(NavLink)`
   background-color: transparent;
-  color: var(--fourth-color);
+  color: rgb(245, 69, 69);
   cursor: pointer;
   display: flex;
   font-size: clamp(0.9rem, 2vw, 3rem);
   &:hover {
-    background-color: rgb(211, 211, 211, 0.2);
+    background-color: rgb(211, 211, 211, 0.6);
   }
 `

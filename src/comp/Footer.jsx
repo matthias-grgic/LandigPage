@@ -5,15 +5,15 @@ import LogoOH from '../img/logo.png'
 
 function Footer() {
   return (
-    <FooterStyled>
+    <FooterContainer>
       <LogoStyled />
       <FunctionNav>
         <StyledNavLink to='/impressum'>Impressum</StyledNavLink>
         <StyledNavLink to='/legalregulations'>Rechtliche Hinweise</StyledNavLink>
         <StyledNavLink to='/termsofuse'>Nutzungsbedingungen</StyledNavLink>
       </FunctionNav>
-      <Copyright>© 2022 Orange Hive GmbH</Copyright>
-    </FooterStyled>
+      <Copyright>© 2022 XXX XXX</Copyright>
+    </FooterContainer>
   )
 }
 
@@ -36,33 +36,32 @@ const FunctionNav = styled.div`
   width: 100%;
 `
 
-const FooterStyled = styled.footer`
+const FooterContainer = styled.footer`
   display: flex;
+  background-color: transparent;
   flex-direction: column;
-  background: var(--fourth-color);
   gap: 1.5rem;
   justify-content: center;
   padding: clamp(0.8rem, 1.5vw, 3rem);
   height: 50%;
   width: 100%;
-  margin-top: 100px;
 `
 
 const LogoStyled = styled.div`
   display: flex;
   background-image: url(${LogoOH});
-  background-size: contain;
+  background-size: clamp(15rem, 50vw, 30rem);
   background-repeat: no-repeat;
   background-color: transparent;
   background-position: center;
-  height: 5rem;
+  height: 10rem;
 `
 
 const StyledNavLink = styled(NavLink)`
   display: flex;
   align-items: center;
   background: transparent;
-  color: var(--white-color);
+  color: black;
   justify-content: center;
   &:hover {
     color: var(--secondary-color);

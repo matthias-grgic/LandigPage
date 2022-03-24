@@ -9,25 +9,15 @@ function Impressum() {
 
 
 
-      Orange Hive GmbH
-      Lindleystr. 12
-      60314 Frankfurt am Main
-      Deutschland
+xxxxxx
+  STREET NR. XX
+CODE CITY
+     GERMANY
       
-      Tel.: +49 (0)69 15 04 66 000
-      Fax: +49 (0)69 15 04 66 063
+      Tel.: XXXXXXXXXXX
+      Fax: XXXXXXXXXXX
       
-      E-Mail: hello@orangehive.de
-      
-      Vertretungsberechtigte Geschäftsführer:
-      Laura Geisler, Steven Sasseville, Carsten Scheele
-      Sitz der Gesellschaft: Frankfurt am Main
-      Registergericht: Amtsgericht Frankfurt am Main
-      Registernummer: HRB 84750
-      Umsatzsteueridentifikationsnummer gemäß §27a
-      Umsatzsteuergesetz: DE 265701188
-      Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
-      Laura Geisler, Steven Sasseville, Carsten Scheele
+      E-Mail: XXXXXXXXXXX
       
       Haftung für Inhalte
       Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 6 Abs.1 MDStV und § 8 Abs.1 TDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Diensteanbieter sind jedoch nicht verpflichtet, die von ihnen übermittelten oder gespeicherten fremden Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei bekannt werden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
