@@ -3,8 +3,9 @@ import styled from 'styled-components'
 function LegalRegulations() {
   return (
     <>
-      <h1>DATENSCHUTZHINWEISE</h1>
-      <LegalRegulationsStyled>{`
+      <LegalRegulationsStyled>
+        <h1>DATENSCHUTZHINWEISE</h1>
+        {`
       
       
       xxxxxx
@@ -30,16 +31,21 @@ CODE CITY
      
      
       
-      `}</LegalRegulationsStyled>
+      `}
+      </LegalRegulationsStyled>
     </>
   )
 }
 
 export default LegalRegulations
 
-const LegalRegulationsStyled = styled.p`
+const LegalRegulationsStyled = styled.article`
   display: block;
   font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+  margin-top: 100px;
   white-space: pre-line;
   width: 60%;
+  h1 {
+    text-align: center;
+  }
 `

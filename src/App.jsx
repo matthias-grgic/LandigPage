@@ -26,9 +26,9 @@ function App() {
 
 export default App
 
-const Content = styled.div`
+const Content = styled.section`
   display: flex;
-  background-image: linear-gradient(0deg, #ee9ca7 0%, #ffdde1 100%);
+  background-color: transparent;
   flex-direction: column;
   align-items: center;
   width: 100vw;
@@ -38,6 +38,7 @@ const Content = styled.div`
 const MainStyled = styled.section`
   display: flex;
   align-items: center;
+  /* background-image: linear-gradient(0deg, #ee9ca7 0%, #ffdde1 100%); */
   flex-direction: column;
   justify-content: center;
   width: 100vw;

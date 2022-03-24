@@ -3,10 +3,9 @@ import styled from 'styled-components'
 function TermsOfUse() {
   return (
     <>
-      <h1>TERMS OF USE</h1>
-      <ImpressumStyled>{`
-
-
+      <ImpressumStyled>
+        <h1>TERMS OF USE</h1>
+        {`
 xxxxxx
   STREET NR. XX
 CODE CITY
@@ -30,16 +29,21 @@ CODE CITY
      
      
 
-`}</ImpressumStyled>
+`}
+      </ImpressumStyled>
     </>
   )
 }
 
 export default TermsOfUse
 
-const ImpressumStyled = styled.div`
+const ImpressumStyled = styled.article`
   display: block;
   font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+  margin-top: 100px;
   white-space: pre-line;
   width: 60%;
+  h1 {
+    text-align: center;
+  }
 `

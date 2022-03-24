@@ -30,7 +30,7 @@ const Copyright = styled.p`
 const FunctionNav = styled.div`
   display: flex;
   background-color: transparent;
-  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
   gap: 1rem;
   justify-content: center;
   width: 100%;
@@ -38,7 +38,6 @@ const FunctionNav = styled.div`
 
 const FooterContainer = styled.footer`
   display: flex;
-  background-color: transparent;
   flex-direction: column;
   gap: 1.5rem;
   justify-content: center;

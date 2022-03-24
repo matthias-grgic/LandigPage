@@ -19,6 +19,14 @@ function LandingPage() {
         img3={TeaserImg3}
         text3={'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem mollitia voluptates cumque nemo ipsa qui suscipit eius saepe culpa quae!'}
       />
+      <TeaserComponent
+        img1={TeaserImg3}
+        text1={'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem mollitia voluptates cumque nemo ipsa qui suscipit eius saepe culpa quae!'}
+        img2={TeaserImg1}
+        text2={'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem mollitia voluptates cumque nemo ipsa qui suscipit eius saepe culpa quae!'}
+        img3={TeaserImg2}
+        text3={'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem mollitia voluptates cumque nemo ipsa qui suscipit eius saepe culpa quae!'}
+      />
     </Container>
   )
 }
@@ -26,5 +34,5 @@ function LandingPage() {
 export default LandingPage
 
 const Container = styled.section`
-  background-color: transparent;
+  /* background-color: transparent; */
 `
