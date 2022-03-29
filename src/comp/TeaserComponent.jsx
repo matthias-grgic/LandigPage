@@ -27,7 +27,7 @@ function TeaserComponent({ img1, img2, img3, text1, text2, text3 }) {
 
       {lightboxDisplay ? (
         <LightBox onClick={() => showImage()}>
-          <img src={setImage}></img>
+          <ImageLightBox img={setImage} />
         </LightBox>
       ) : (
         ''
@@ -37,6 +37,20 @@ function TeaserComponent({ img1, img2, img3, text1, text2, text3 }) {
 }
 
 export default TeaserComponent
+
+const ImageLightBox = styled.div`
+  background-image: url(${(props) => props.img});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
+  height: 80%;
+  width: 80%;
+  @media (max-width: 400px) {
+    height: 96%;
+    width: 96%;
+  }
+`
 
 const LightBox = styled.div`
   display: flex;
@@ -78,6 +92,8 @@ const Text = styled.div`
   display: flex;
   background-color: transparent;
   font-size: clamp(1rem, 1.5vw, 1.2rem);
+  text-align: center;
+  text-transform: uppercase;
 `
 
 const TeaserImageOne = styled.div`

@@ -31,11 +31,11 @@ const Menu = styled.div`
 
 const StyledNavLink = styled(NavLink)`
   background-color: transparent;
-  color: rgb(245, 69, 69);
+  color: white;
   cursor: pointer;
   display: flex;
   font-size: clamp(0.9rem, 2vw, 3rem);
   &:hover {
-    background-color: rgb(211, 211, 211, 0.6);
+    background-color: rgb(255, 221, 225, 0.5);
   }
 `

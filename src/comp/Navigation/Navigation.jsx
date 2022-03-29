@@ -8,7 +8,7 @@ function Navigation() {
 
   //change state when scrolled down
   const changeBackground = () => {
-    if (document.scrollingElement.scrollTop >= 66) {
+    if (document.scrollingElement.scrollTop >= 150) {
       setNavBar(true)
     } else {
       setNavBar(false)
@@ -34,7 +34,7 @@ export default Navigation
 
 const NavBar = styled.nav`
   display: flex;
-  background-color: ${(props) => (props.status === 'active' ? 'transparent' : 'rgb(211, 211, 211, 0.6)')};
+  background-color: ${(props) => (props.status === 'active' ? 'transparent' : 'rgb(235, 176, 183, 0.6)')};
   top: 0;
   justify-content: space-around;
   margin: 10px;
