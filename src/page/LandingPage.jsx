@@ -39,13 +39,7 @@ function LandingPage() {
         img3={TeaserImg6}
         text3={'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'}
       />
-      <ImageAndHeader
-        headerText={`Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-        Voluptatem mollitia voluptates cumque nemo ipsa qui suscipit`}
-        headerColor={'white'}
-        showLogo={'none'}
-        backgroundImg={VisualImg2}
-      />
+      <ImageAndHeader headerText={`Lorem ipsum, dolor sit amet consectetur adipisicing elit`} headerColor={'white'} showLogo={'none'} backgroundImg={VisualImg2} />
     </Container>
   )
 }
