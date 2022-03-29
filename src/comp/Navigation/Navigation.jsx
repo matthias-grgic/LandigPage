@@ -8,7 +8,7 @@ function Navigation() {
 
   //change state when scrolled down
   const changeBackground = () => {
-    if (document.scrollingElement.scrollTop >= 150) {
+    if (document.scrollingElement.scrollTop >= 450) {
       setNavBar(true)
     } else {
       setNavBar(false)
@@ -22,10 +22,10 @@ function Navigation() {
 
   return (
     <NavBar status={navbar ? 'navbar' : 'active'}>
-      <SubNav buttonName={'PROJEKTE'} subButton1={'PROJEKT-A'} subButton2={'PROJEKT-B'} subButton3={'PROJEKT-C'} />
-      <SubNav buttonName={'ÜBER UNS'} subButton1={'PHILOSOPHIE'} subButton2={'GESCHÄFTSFÜHRUNG'} subButton3={'MITARBEITER'} />
-      <SubNav buttonName={'REFERENZEN'} />
-      <SubNav buttonName={'KONTAKT'} />
+      <SubNav linkColor={navbar} buttonName={'PROJEKTE'} subButton1={'PROJEKT-A'} subButton2={'PROJEKT-B'} subButton3={'PROJEKT-C'} />
+      <SubNav linkColor={navbar} buttonName={'ÜBER UNS'} subButton1={'PHILOSOPHIE'} subButton2={'GESCHÄFTSFÜHRUNG'} subButton3={'MITARBEITER'} />
+      <SubNav linkColor={navbar} buttonName={'REFERENZEN'} />
+      <SubNav linkColor={navbar} buttonName={'KONTAKT'} />
     </NavBar>
   )
 }
@@ -34,7 +34,7 @@ export default Navigation
 
 const NavBar = styled.nav`
   display: flex;
-  background-color: ${(props) => (props.status === 'active' ? 'transparent' : 'rgb(235, 176, 183, 0.6)')};
+  background-color: ${(props) => (props.status === 'active' ? 'transparent' : 'rgb(235, 176, 183, 0.2)')};
   top: 0;
   justify-content: space-around;
   margin: 10px;
