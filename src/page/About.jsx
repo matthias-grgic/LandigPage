@@ -1,4 +1,4 @@
-function About(params) {
+function About() {
   return (
     <>
       <div>About</div>

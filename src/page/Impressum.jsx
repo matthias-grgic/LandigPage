@@ -2,10 +2,9 @@ import styled from 'styled-components'
 
 function Impressum() {
   return (
-    <>
-      <ImpressumStyled>
-        <h1>IMPRESSUM</h1>
-        {`
+    <ImpressumStyled>
+      <h1>IMPRESSUM</h1>
+      {`
 xxxxxx
   STREET NR. XX
 CODE CITY
@@ -29,8 +28,7 @@ CODE CITY
      
      
       `}
-      </ImpressumStyled>
-    </>
+    </ImpressumStyled>
   )
 }
 

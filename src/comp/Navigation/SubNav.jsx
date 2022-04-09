@@ -2,7 +2,9 @@ import { useState } from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
-function SubNav({ buttonName, subButton1, subButton2, subButton3, linkColor }) {
+function SubNav({
+  buttonName, subButton1, subButton2, subButton3, linkColor
+}) {
   const [showMenuAbout, setShowMenuAbout] = useState(false)
   return (
     <Container onMouseLeave={() => setShowMenuAbout(false)} onMouseOver={() => setShowMenuAbout(true)}>

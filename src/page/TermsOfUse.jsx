@@ -2,10 +2,9 @@ import styled from 'styled-components'
 
 function TermsOfUse() {
   return (
-    <>
-      <ImpressumStyled>
-        <h1>TERMS OF USE</h1>
-        {`
+    <ImpressumStyled>
+      <h1>TERMS OF USE</h1>
+      {`
 xxxxxx
   STREET NR. XX
 CODE CITY
@@ -30,8 +29,7 @@ CODE CITY
      
 
 `}
-      </ImpressumStyled>
-    </>
+    </ImpressumStyled>
   )
 }
 

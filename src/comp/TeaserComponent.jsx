@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 import { useState } from 'react'
 
-function TeaserComponent({ img1, img2, img3, text1, text2, text3 }) {
+function TeaserComponent({
+  img1, img2, img3, text1, text2, text3
+}) {
   const [lightboxDisplay, setLightboxDisplay] = useState(false)
   const [setImage, setSetImage] = useState('')
 

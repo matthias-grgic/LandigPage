@@ -2,10 +2,9 @@ import styled from 'styled-components'
 
 function LegalRegulations() {
   return (
-    <>
-      <LegalRegulationsStyled>
-        <h1>DATENSCHUTZHINWEISE</h1>
-        {`
+    <LegalRegulationsStyled>
+      <h1>DATENSCHUTZHINWEISE</h1>
+      {`
       
       
       xxxxxx
@@ -32,8 +31,7 @@ CODE CITY
      
       
       `}
-      </LegalRegulationsStyled>
-    </>
+    </LegalRegulationsStyled>
   )
 }
 

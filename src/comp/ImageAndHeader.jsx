@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
-function Welcome({ headerColor, headerText, logoImg, backgroundImg, showLogo }) {
+function Welcome({
+  headerColor, headerText, logoImg, backgroundImg, showLogo
+}) {
   return (
     <Container>
       <WelcomeStyled urlBackground={backgroundImg}>

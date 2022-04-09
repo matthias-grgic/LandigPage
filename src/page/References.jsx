@@ -1,9 +1,5 @@
-function References(params) {
-  return (
-    <>
-      <div>References</div>
-    </>
-  )
+function References() {
+  return <div>References</div>
 }
 
 export default References

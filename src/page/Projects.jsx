@@ -1,9 +1,5 @@
-function Projects(params) {
-  return (
-    <>
-      <div>Projects</div>
-    </>
-  )
+function Projects() {
+  return <div>Projects</div>
 }
 
 export default Projects

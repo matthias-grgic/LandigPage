@@ -8,9 +8,9 @@ function Footer() {
     <FooterContainer>
       <LogoStyled />
       <FunctionNav>
-        <StyledNavLink to='/impressum'>Impressum</StyledNavLink>
-        <StyledNavLink to='/legalregulations'>Rechtliche Hinweise</StyledNavLink>
-        <StyledNavLink to='/termsofuse'>Nutzungsbedingungen</StyledNavLink>
+        <StyledNavLink to="/impressum">Impressum</StyledNavLink>
+        <StyledNavLink to="/legalregulations">Rechtliche Hinweise</StyledNavLink>
+        <StyledNavLink to="/termsofuse">Nutzungsbedingungen</StyledNavLink>
       </FunctionNav>
       <Copyright>© 2022 XXX XXX</Copyright>
     </FooterContainer>

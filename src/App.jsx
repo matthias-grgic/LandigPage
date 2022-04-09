@@ -13,10 +13,10 @@ function App() {
       <Navigation />
       <Content>
         <Routes>
-          <Route path='/' element={<LandingPage />} />
-          <Route path='/impressum' element={<Impressum />} />
-          <Route path='/legalregulations' element={<LegalRegulations />} />
-          <Route path='/termsofuse' element={<TermsOfUse />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/impressum" element={<Impressum />} />
+          <Route path="/legalregulations" element={<LegalRegulations />} />
+          <Route path="/termsofuse" element={<TermsOfUse />} />
         </Routes>
         <Footer />
       </Content>
